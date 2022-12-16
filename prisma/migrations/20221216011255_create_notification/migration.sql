@@ -3,7 +3,7 @@ CREATE TABLE "Notification" (
     "id" TEXT NOT NULL PRIMARY KEY,
     "recipientId" TEXT NOT NULL,
     "content" TEXT NOT NULL,
-    "caregory" TEXT NOT NULL,
+    "category" TEXT NOT NULL,
     "reatAt" DATETIME,
     "createdAt" DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP
 );

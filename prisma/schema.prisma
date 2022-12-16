@@ -14,7 +14,7 @@ model Notification {
   id          String    @id
   recipientId String
   content     String
-  caregory    String
+  category    String
   reatAt      DateTime?
   createdAt   DateTime  @default(now())
 
