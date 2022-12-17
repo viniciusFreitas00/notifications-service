@@ -24,16 +24,5 @@ export class CountRecipientNotification {
     );
 
     return { count };
-    // // const notification = await this.notificationRepository.findById(
-    // //   notificationId,
-    // // );
-
-    // if (!notification) {
-    //   throw new NotificationNotFound();
-    // }
-
-    // notification.cancel();
-
-    // this.notificationRepository.save(notification);
   }
 }
