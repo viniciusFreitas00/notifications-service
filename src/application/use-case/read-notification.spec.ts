@@ -8,7 +8,9 @@ describe('Read Notification', () => {
     const notificationRepository = new InMomeryNotificationRepository();
     const readNotification = new ReadNotification(notificationRepository);
 
-    const notification = makeNotification();
+    const notification = makeNotification({
+      readAt: new Date(),
+    });
 
     await notificationRepository.create(notification);
 
@@ -19,7 +21,7 @@ describe('Read Notification', () => {
     );
   });
 
-  it('should not be able to cancel a notification when it does not exist', async () => {
+  it('should not be able to read a notification when it does not exist', async () => {
     const notificationRepository = new InMomeryNotificationRepository();
     const readNotification = new ReadNotification(notificationRepository);
 
