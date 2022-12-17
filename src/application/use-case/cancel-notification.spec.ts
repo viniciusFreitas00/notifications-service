@@ -1,5 +1,4 @@
 import { Content } from '@application/entities/content';
-import { Notification } from '@application/entities/notification';
 import { InMomeryNotificationRepository } from '@test/repositories/in-memory-notification-repository';
 import { CancelNotification } from './cancel-notification';
 import { NotificationNotFound } from './errors/notification-not-found';
